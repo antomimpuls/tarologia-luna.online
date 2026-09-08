@@ -1539,6 +1539,7 @@ ym(SITE_SETTINGS.yandexMetrikaId,"init",{clickmap:true,trackLinks:true,accurateT
 })();
 </script>
 
+
 <!-- CONVERSIA_MAX_RUNTIME_BEGIN -->
 <style>/* Shape, spacing and type come from each site's existing .btn rule. */
 .btn.btn-max[data-max-button] {
@@ -1612,7 +1613,7 @@ ym(SITE_SETTINGS.yandexMetrikaId,"init",{clickmap:true,trackLinks:true,accurateT
       if (!value) return null;
       try {
         const url = new URL(value);
-        if (url.protocol !== 'https:' || !['max.ru','web.max.ru'].includes(url.hostname) || url.port || url.username || url.password) return null;
+        if (url.protocol !== 'https:' || !['max.ru', 'web.max.ru'].includes(url.hostname) || url.port || url.username || url.password) return null;
         if (/[\s\\\u0000-\u001f\u007f]/.test(value)) return null;
       } catch (_) { return null; }
       return value;
